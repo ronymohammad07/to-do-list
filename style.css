@@ -1,0 +1,22 @@
+*{
+    text-decoration: none;
+    list-style: none;
+}
+
+/* ul list */
+.ul>li{
+    color: white;
+    font-weight: bold;
+    border: 1px solid rgba(128, 128, 128, 0.459);
+    margin: 2px 0 2px 0;
+    padding: 3px;
+}
+
+.ul>li:nth-child(even){
+    background-color: rgba(255, 255, 255, 0.349);
+
+}
+.ul>li:nth-child(odd){
+    background-color: rgba(0, 0, 0, 0.349);
+
+}
