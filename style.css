@@ -126,3 +126,15 @@ body{
         text-align: justify;
     } */
 }
+
+/* Tablets (600px - 1024px) */
+@media (min-width: 601px) and (max-width: 1240px) {
+    .main-div{
+        width: 60%;
+        
+    }
+
+    .ul>li>span{
+        width: 78%;
+    }
+}
