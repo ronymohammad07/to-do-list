@@ -1,22 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Pacifico&display=swap');
+
+
 *{
     text-decoration: none;
     list-style: none;
+    color:#A27B5C;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #3F4F44;
+}
+.main-div{
+    width: 50vw;
+    background-color: #2C3930;
+    margin: 0 auto;
+    margin-top: 4vh;
 }
 
+.main-div h3{
+    font-weight: bold;
+    text-align: center;
+    padding: 2px 0;
+}
+
+.main-div>div{
+    padding: 0.8vh 3.5vw 0 3.8vw;
+}
+
+.main-div>div input::placeholder{
+    padding: 1vh 1vw;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.main-div>div button{
+    background-color: #3F4F44;
+    color: #A27B5C;
+    font-weight: bold;
+}
+
+
+
+
+
 /* ul list */
+.ul{
+    padding: 0.8vh 3.5vw 0 3.8vw;
+
+
+}
+
 .ul>li{
-    color: white;
+    
     font-weight: bold;
     border: 1px solid rgba(128, 128, 128, 0.459);
     margin: 2px 0 2px 0;
     padding: 3px;
+    /* width: ; */
+    /* font-family: "Pacifico", serif; */
 }
 
 .ul>li:nth-child(even){
-    background-color: rgba(255, 255, 255, 0.349);
+    background-color: transparent;
 
 }
 .ul>li:nth-child(odd){
     background-color: rgba(0, 0, 0, 0.349);
 
+}
+
+.ul>li>div>button:first-child{
+    background-color: #a27b5c4d;
+    padding: 0.2rem 0.5rem;
+}
+.ul>li>div>button:first-child:hover{
+    background-color: #A27B5C;
+}
+
+.ul>li>div>button:nth-of-type(2){
+    background-color: rgba(255, 0, 0, 0.26);
+    padding: 0.2rem 0.5rem;
+    border: none;
+}
+.ul>li>div>button:nth-of-type(2):hover{
+    background-color: red;
+}
+
+
+.ul>li>span{
+    width: 85%;
+    /* max-height: 100vh; */
+    text-align: justify;
+}
+/* alert show */
+
+.alert{
+    margin: 0;
+    padding: 0.8vh 3.5vw 0 3.8vw;
+
+}
+
+
+/* Media Queries */
+
+@media (max-width:600px){
+    .main-div{
+        width: 100%;
+        
+    }
+
+    .main-div>div{
+        /* padding: 0 8vw; */
+    }
+
+    /* ul section */
+    .ul>li>span{
+        width: 78%;
+    }
+    /* .ul>li>span{
+        width: 85%;
+        max-height: 100vh;
+        text-align: justify;
+    } */
 }
